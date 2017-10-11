@@ -1,5 +1,5 @@
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0px;
 	color: #0e2338;
 }
@@ -52,12 +52,21 @@ body {
 	text-align: center;
 	top: 30%;
 	font-size: 5em;
+	font-family: 'Orbitron', cursive;
 }
 
 #main_content  {
 	margin: 50px 75px 50px 75px;
 	font-size: 1.5em;
 	line-height: 1.5em;
+}
+
+h2 {
+	font-family: 'Orbitron', cursive;
+}
+
+strong{
+	font-family: 'Orbitron', cursive;
 }
 
 .sub_content {
@@ -97,6 +106,8 @@ body {
 
 #footer p {
 	margin-left: 75px;
+	font-family: 'Orbitron', cursive;
+	font-size: 35px;
 }
 
 #footer a {
@@ -107,6 +118,7 @@ body {
 #footer a:hover {
 	text-decoration: underline;
 }
+
 
 
 
