@@ -1,63 +1,148 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+  <title>Mr. Mulroy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Ribeye+Marrow|Roboto" rel="stylesheet">
+  <style>
+  body {
+    font-family: 20px Roboto, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 10px;}
+  .bg-1 { 
+    background-color: #0f458f; /* blue */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #fa4615; /* orange */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #0f458f; /* blue */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
 
-	<title>Mr. Mulroy</title>
-	
-	<link href="https://fonts.googleapis.com/css?family=Orbitron|Ribeye+Marrow|Roboto" rel="stylesheet">
-	
-	<link rel = "stylesheet" type = "text/css" href =  "global.css" />
-	
-	<meta charset="UTF-8">
-	
+ @media only screen and (min-width: 750px){
+     #myNavbar{
+         visibility: hidden;
+     }       
+ }
+
+  </style>
 </head>
-
 <body>
 
-	<div id = "main_nav">
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style = "font-family: Orbitron">Mr. Mulroy</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#apcs">AP CS</a></li>
+        <li><a href="#programming">Programming</a></li>
+        <li><a href="#web">Web Design</a></li>
+        <li><a href="#robotics">Robotics</a></li>
+        <li><a href="#cs9">CS9</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-		<ul>
-			<li><a href = "index.html">Home</a></li>
-			<li><a href = "ap_cs.html">AP CS</a></li>
-			<li><a href = "programming.html">Programming</a></li>
-			<li><a href = "web.html">Web Design</a></li>
-			<li><a href = "robotics.html">Robotics</a></li>
-			<li><a href = "cs9.html">Comp Sci 9</a></li>
-		</ul>
-	
-	</div>	<!--closes main nav-->
-	
-	<div id = "banner">
-		<h1>LEARN TO CODE</h1>
-	</div>		<!--closes banner-->
-	
-	<div id = "main_content">
-		<p><strong>Goal : </strong>The US Bureau of Labor Statistics predicts one in every two STEM jobs in the country will be in computing occupations, with more than 150,000 job openings annually making it one of the fastest growing occupations in the United States. And these jobs pay 75% more than the national median annual salary. Finally, the breadth of industries requiring computing professionals is diverse -- two-thirds of computing jobs are in sectors other than information technology, including manufacturing, defense, health care, finance, and government.</p>
-		
-		<p><strong>Source :</strong> <em> code.org</em></p>
-		
-		<div class = "sub_content">
-			<img src = "images/code_badges.jpg" height = "300px" width = "400" />
-			
-				<h2>LEARN HOW TO THINK</h2>
-				<p>"<em>I think everybody in this country should learn how to program a computer because it teaches you how to think.</em>" - <strong>Steve Jobs</strong></p>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 style = "font-family: Orbitron">LEARN HOW TO THINK</h3>  
+  <img src="images/code_badges.jpg" class="img-responsive img-circle margin" style="display:inline" alt="badge" width="350" height="350">
+  
+  <p>"<em>I think everybody in this country should learn how to program a computer because it teaches you how to think.</em>" - <strong>Steve Jobs</strong></p>
+</div>
 
-				<p>According to <em>code.org, </em>computer science develops students' computational and critical thinking skills and shows them how to create, not simply use, new technologies. This fundamental knowledge is needed to prepare students for the 21st century, regardless of their ultimate field of study or occupation.</p>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+   <p>According to <em>code.org, </em>computer science develops students' computational and critical thinking skills and shows them how to create, not simply use, new technologies. This fundamental knowledge is needed to prepare students for the 21st century, regardless of their ultimate field of study or occupation.</p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-justify">    
+  <h3 style = "text-decoration: underline; text-align: center">Computer Science Courses</h3>
+  <div class="row">
+    <div class="col-sm-2">
+      <h3 style = "font-family: Orbitron; text-align: center" id = "apcs">AP Comp Sci</h3>
+       <!-- <img src="images/apcs.jpg" class="img-responsive margin" style="width:100%" alt="Image">-->
+        <p>The AP Computer Science course is an introductory course in computer science. Because the design and implementation of computer programs to solve problems involve skills that are fundamental to the study of computer science, a large part of the course is built around the development of computer programs that correctly solve a given problem. These programs should be understandable, adaptable, and when appropriate, reusable. At the same time, the design and implementation of computer programs is used as a context for introducing other important aspects of computer science, including the development and analysis of algorithms, the development and use of fundamental data structures, the study of standard algorithms and typical applications, and the use of logic and formal methods. In addition, the responsible use of these systems is an integral part of the course. The Advanced Placement exam is required of all students in this course. </p>
+  
+    </div>
+    <div class="col-sm-2"> 
+      <h3 style = "font-family: Orbitron; text-align: center" id = "programming">Programming</h3>
+     <!-- <img src="images/alice.jpg" class="img-responsive margin" style="width:100%" alt="Image">-->
+      <p>The <em>Introduction to Programming using Alice</em> course is a one-semester elective for any student in grades 10-12. This course is designed for students who have had no previous programming experience. The Alice development environment uses 3D graphics to introduce students to computer programming. Topics to be covered include program design and problem solving, objects and classes, fields, methods and parameters, basic data types and defined operators, control structures (selection and loops), and lists.</p>
 		
-		</div>  	<!--closes sub content -->
-	</div>		<!--closes main content-->
-	
-	<div id = "footer">
-		<p><strong>Contact Mr. Mulroy: </strong></p>
+      <p><em>Programming using Alice and Java</em> continues to develop programming knowledge and skills by transitioning from the Alice development environment to a text-based Java development environment. Topics will include classes and objects, inheritance, scoping of variables and parameters, and a more realistic Java language display mode. Students will write both Alice and Java programs throughout the course.</p> 
+     
+    </div>
+    <div class="col-sm-2"> 
+      <h3 style = "font-family: Orbitron; text-align: center" id = "web">Web Design</h3>
+      <!--<img src="images/html5_logo.png" class="img-responsive margin" style="width:100%" alt="Image">-->
+      <p><em>Web Page Design I</em> offers the advanced computer student the necessary background to design and create appealing and effective web pages. Students will create web pages with a combination of HTML and CSS. Students will become fluent in both languages as they create syntactically correct, validated code.  Also, students will be introduced design principles and color theory as they create visually stunning web sites.</p>
 		
-		<ul>
-			<li><strong>Phone :</strong> 724 548 7600</li>
-			<li><strong>Email :</strong> <a href = "mailto:pmulroy@asd.k12.pa.us">pmulroy@asd.k12.pa.us</a></li>
-		</ul>
-	</div>
+      <p><em>Web Page Design II</em> furthers the students knowledge of web design by introducing scripting languages. Throught the use of scripting languages students will add an interactive aspect to their web sites. Emphasis will continue to be placed on well written, validated code. During this course students will have the oppurtunity to develop web sites for client's in the community.</p>
+      
+    </div>
+    <div class="col-sm-2"> 
+      <h3 style = "font-family: Orbitron; text-align: center" id = "robotics">Robotics</h3>
+      <!--<img src="images/robotc.png" class="img-responsive margin" style="width:100%" alt="Image">-->
+      <p>The purpose of this course is to help students master science, technology, engineering and mathematics principles while building critical thinking skills and creative problems solving skills that will serve them for a lifetime. STEM Robotics teaches 21st century skill sets like time management, resource allocation, teamwork, and communications. Students will be encouraged to explore their talents and to work hands-on to master STEM skills through practical experience, integrating the LEGO MINDSTORMS NXT robotics building systems, and Robot C, an industry-standard programming language developed by Carnegie Mellon University. Students will have the opportunity to build and program robots to solve real-world problems and compete in an in-class robotics competition.</p>
+      
+    </div>  
+    <div class="col-sm-2"> 
+      <h3 style = "font-family: Orbitron; text-align: center" id = "cs9">Computer Science 9</h3>
+      <!--<img src="images/cs.jpg" class="img-responsive margin" style="width:100%" alt="Image">-->
+      <p>Successful completion of Computer Science 9 is a requirement for graduation. This course provides an overview of computer hardware through the study of the four components of an computer system: input devices, processing hardware, storage and retrieval equipment and output devices. Students explore various types of software. Presentations, discussions, computer exercises, and projects provide exposure to system software, computer programming languages and application software. Other computer related topics, such as security issues, ethics, networking and the Internet will be included. Course content will be presented in a blended learning format through Blackboard. The course will provide the necessary background for students to enter the computer programming course cycle, beginning with the first programming course - Programming I: Intro to Computer Programming Using Alice.</p>
+      
+    </div>
+  </div>  
+</div> 
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <h3 id = "contanct"><strong>Contact Mr. Mulroy: </strong></h3>
+    <p><strong>Phone :</strong> 724 548 7600</p>
+    <p><strong>Email :</strong> <a href = "mailto:pmulroy@asd.k12.pa.us" style = "color: white;">pmulroy@asd.k12.pa.us</a></p>
+</footer>
 
 </body>
-
 </html>
